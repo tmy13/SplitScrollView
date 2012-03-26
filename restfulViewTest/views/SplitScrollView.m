@@ -147,7 +147,7 @@
     if (scrollView == rightScrollView && !touchLeft) {
         CGFloat offset = rightOffset.y - startOffset.y;
         CGPoint newLeftOffset = leftOffset;
-        newLeftOffset.y += (offset/rate);
+        newLeftOffset.y += (offset*rate);
         //NSLog(@"left:\n leftOffset %.2f, rightOffset %.2f", newLeftOffset.y, rightOffset.y);
         [leftScrollView setContentOffset:newLeftOffset];
         startOffset = rightOffset;
